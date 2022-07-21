@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- * All meta data used -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="This is a template created with Bootstrap framework">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, Bootstrap, Grid System">
+    <meta name="author" content="Khaled Mohamed Mahmoud Ahmed">
+
+    <!-- * Title of the page -->
+    <title>Start Bootstrap Theme</title>
+
+    <!-- * All favicon needed in the page -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+    <!-- * There are all main css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- * This is fontawesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- * There are custom css file -->
+    <link rel="stylesheet" href="css/main-styles.css">
+
+    <!-- * This is html5shiv.js -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<!-- style="height: 20000px;" -->
+
+<body data-bs-spy="scroll" data-bs-target="#navId">
+
+    <!-- * Navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-white fixed-top px-2 py-4" id="mainNavBar">
+        <div class="container">
+            <a class="navbar-brand text-white text-uppercase fw-bold" href="#">start bootstrap</a>
+
+            <button class="navbar-toggler py-2 text-white text-uppercase bg-primary rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navLists" aria-controls="navLists" aria-expanded="false"
+                aria-label="Toggle navigation">
+                menu
+                <i class="fas fa-bars"></i>
+            </button> <!-- ./navbar-toggler -->
+
+            <div class="collapse navbar-collapse" id="navLists">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-center fw-bold text-white active" aria-current="page"
+                            href="#portfolio">portfolio</a>
+                    </li> <!-- ./nav-item -->
+
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-uppercase text-center fw-bold text-white" href="#about">about</a>
+                    </li> <!-- ./nav-item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-center fw-bold text-white" href="#contact">contact</a>
+                    </li> <!-- ./nav-item -->
+                </ul> <!-- ./navbar-nav -->
+            </div> <!-- ./navbar-collapse -->
+        </div> <!-- ./container -->
+    </nav> <!-- ./navbar -->
+
+    <!-- * Landing section -->
+    <div class="container-fluid landing d-flex align-items-center flex-column">
+        <div class="intro">
+            <img src="./assets/icons/avatar.svg" class="my-img d-block mx-auto my-5 img-fluid"
+                alt="Avatar of the person">
+
+            <div class="center text-center">
+                <h2 class="display-3 text-uppercase text-light fs-1 fw-bold">start bootstrap</h2>
+
+                <div class="star">
+                    <div class="line"></div>
+                    <i class="fa-solid fa-star text-light mb-3"></i>
+                    <div class="line"></div>
+                </div> <!-- ./star -->
+
+                <p class="fs-3 text-light">Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+        </div> <!-- ./intro -->
+    </div> <!-- ./landing -->
+
+    <!-- * Portfolio section -->
+    <div class="portfolio" id="portfolio">
+        <p class="display-4 text-center text-secondary fw-bold text-uppercase">portfolio</p>
+        <div class="star mb-5">
+            <div class="line bg-secondary"></div>
+            <i class="fa-solid fa-star text-secondary mb-3"></i>
+            <div class="line bg-secondary"></div>
+        </div> <!-- ./star -->
+
+        <div class="container text-center d-block">
+            <div class="row row-cols-md-3 row-cols-sm-1 gx-4">
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Cabin" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/cabin.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Circus" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/circus.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Cake" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/cake.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Game" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/game.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Safe" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/safe.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card m-auto mb-3" data-photo="Submarine" data-bs-toggle="modal"
+                        data-bs-target="#openPhotoModal">
+                        <img src="./assets/images/submarine.png" class="card-img-top" alt="My Card">
+                    </div> <!-- ./card -->
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </div>
+
+    <!-- * About section -->
+    <div class="about" id="about">
+        <div class="container-fluid text-center d-block bg-primary text-white">
+            <p class="display-4 text-center text-white fw-bold text-uppercase">about</p>
+            <div class="star">
+                <div class="line"></div>
+                <i class="fa-solid fa-star text-white mb-3"></i>
+                <div class="line"></div>
+            </div> <!-- ./star -->
+
+            <div class="row px-4 mt-5 fw-bold text-center m-auto">
+                <div class="col-sm-12 col-md-6">
+                    <p>
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                        complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets
+                        for easy customization.
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <p>
+                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add
+                        your email address to the contact form to make it fully functional!
+                    </p>
+                </div>
+            </div> <!-- ./row -->
+
+            <button type="button" class="btn btn-outline-light mt-5 text-capitalize fs-4 px-5 py-3">
+                <i class="fas fa-download"></i> free download!
+            </button> <!-- ./button -->
+
+        </div> <!-- ./container-fluid -->
+    </div> <!-- ./about -->
+
+    <!-- * Start contact section -->
+    <div class="contact" id="contact">
+        <p class="display-4 text-center text-secondary fw-bold text-uppercase">contact</p>
+        <div class="star">
+            <div class="line bg-secondary"></div>
+            <i class="fa-solid fa-star text-secondary mb-3"></i>
+            <div class="line bg-secondary"></div>
+        </div> <!-- ./star -->
+
+        <div class="row w-75 m-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control py-3 px-0" aria-label="Sizing example input"
+                            placeholder="Full name" aria-describedby="inputGroup-sizing-default">
+                    </div> <!-- ./input-group -->
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control py-3 px-0" aria-label="Sizing example input"
+                            placeholder="Email address" aria-describedby="inputGroup-sizing-default">
+                    </div> <!-- ./input-group -->
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control py-3 px-0" aria-label="Sizing example input"
+                            placeholder="Phone number" aria-describedby="inputGroup-sizing-default">
+                    </div> <!-- ./input-group -->
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <textarea class="form-control py-3 px-0" aria-label="With textarea"
+                            placeholder="Message"></textarea>
+                    </div> <!-- ./input-group -->
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+
+            <div class="row mt-4">
+                <div class="col">
+                    <a class="w-25 btn bg-primary text-white text-capitalize" href="#" role="button">send</a>
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+        </div> <!-- ./row -->
+    </div> <!-- ./contact -->
+
+    <!-- * Footer section -->
+    <footer class="footer" id="footer">
+        <div class="container-fluid bg-secondary py-2">
+            <p class="text-center text-white mt-3">
+                Copyright &copy; Khaled Mohamed 2022
+            </p>
+        </div>
+    </footer> <!-- ./footer -->
+
+    <!-- * Modal section for open each photo in the portfolio section -->
+    <div class="modal fade" id="openPhotoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="openPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title align-self-center" id="openPhotoModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" id="modalBody"></div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary d-block w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./modal -->
+
+    <!-- * All my script files -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
