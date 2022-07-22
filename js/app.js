@@ -21,7 +21,7 @@ const openPhoto = () => {
 
       myTitle.textContent = getMyPhotoName;
 
-      modalBody.innerHTML = `<img src=".././assets/images/${getMyPhotoName}.png" class="w-75 d-block text-center m-auto">`;
+      modalBody.innerHTML = `<img src="../assets/images/${getMyPhotoName}.png" class="w-75 d-block text-center m-auto">`;
     });
   });
 };
