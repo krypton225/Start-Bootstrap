@@ -48,6 +48,8 @@
 }
 
 .navbar-brand {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -66,6 +68,8 @@
 }
 
 #mainNavBar {
+  -webkit-transition: padding-top 0.3s ease-in, padding-bottom 0.3s ease-in;
+  -o-transition: padding-top 0.3s ease-in, padding-bottom 0.3s ease-in;
   transition: padding-top 0.3s ease-in, padding-bottom 0.3s ease-in;
 }
 
@@ -92,6 +96,8 @@
 
 .nav-link {
   border-radius: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -126,8 +132,14 @@
 .star {
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -179,12 +191,20 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #1abc9ce5;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
@@ -228,11 +248,13 @@ input:active,
 textarea:active {
   outline: none !important;
   -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 [aria-label="Close"] {
   outline: none !important;
   -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
